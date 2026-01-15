@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-white;
+    background-image: 
+      radial-gradient(at 40% 20%, rgba(255, 107, 107, 0.1) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, rgba(78, 205, 196, 0.1) 0px, transparent 50%);
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl;
+  }
+  
+  .btn-playful {
+    @apply bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-full 
+           hover:shadow-xl transition-all duration-300;
+  }
+  
+  .btn-ghost {
+    @apply border-2 border-white/30 text-white px-6 py-3 rounded-full
+           hover:border-purple-500 transition-all duration-300;
+  }
+  
+  .minimal-input {
+    @apply bg-white/10 border-0 border-b-2 border-white/30 text-white 
+           focus:border-purple-500 focus:ring-0 px-0 py-3 text-lg w-full;
+  }
+}
