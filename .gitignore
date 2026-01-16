@@ -1,17 +1,15 @@
-# Frontend
+# Node modules
+node_modules/
 frontend/node_modules/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+.env.local
+
+# Build files
 frontend/build/
-frontend/.env
-
-# Backend
-backend/venv/
-backend/__pycache__/
-backend/*/__pycache__/
-backend/*.pyc
-
-# IDE
-.vscode/
-.idea/
-
-# OS
-.DS_Store
+dist/
